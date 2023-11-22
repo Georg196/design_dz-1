@@ -1,0 +1,222 @@
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    /* —————» Основная часть «————— */
+    /* —————»  Меню «————— */
+
+    body {
+        background-image: url(./материалы/BG.jpg);
+        background-size: cover;
+    }
+
+    .conteiner {
+        display: flex;
+    }
+
+    .menu {
+        background-color: rgb(0, 0, 0, 0.4);
+        width: 15%;
+        min-height: 100vh;
+        flex-shrink: 0;
+        position: fixed;
+    }
+
+    .logo svg {
+        display: block;
+        margin-top: 50px;
+        margin-left: 15%;
+        margin-bottom: 100px;
+        width: 60%;
+    }
+
+    .main-menu {
+        padding-bottom: 100px;
+    }
+
+    .text-manu {
+        color: var(--FFF, #FFF);
+        font-family: Oswald;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: block;
+        margin-top: 50px;
+        margin-left: 30%;
+        position: relative;
+    }
+
+    .activ {
+        color: var(--A276FF, #A276FF);
+    }
+
+    .activ::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        margin-top: -4%;
+        left: -40%;
+        width: 6px;
+        min-height: 180%;
+        background-color: #A276FF;
+        border-radius: 0 20px 20px 0;
+    }
+
+
+    .text-manu:hover {
+        color: var(--A276FF, #A276FF);
+    }
+
+    .support {
+        opacity: 0.6;
+    }
+
+    .info {
+        margin-top: 80px;
+        opacity: 0.2;
+        cursor: default;
+    }
+
+    .info:hover {
+        color: var(--FFF, #FFF);
+    }
+
+    /* —————» Главный экран «————— */
+
+    /* Переход на твитер и фэйсбук */
+    .net {
+        position: fixed;
+        margin-left: 68%;
+        z-index: 1;
+    }
+
+    .content {
+        color: #FFF;
+        margin: 4%  10%;
+        margin-left: 20%;
+    }
+
+    .content div {
+        margin-bottom: 60px;
+    }
+
+    .mb {
+        margin-bottom: 30px;
+    }
+
+    button {
+        width: 352px;
+        height: 70px;
+        flex-shrink: 0;
+        background: none;
+        border-radius: 17px;
+        border: 3px solid #A276FF;
+        cursor: pointer;
+    }
+
+    .bt-text {
+        color: var(--FFF, #FFF);
+        text-align: center;
+        font-family: Oswald;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50%;
+    }
+
+    .bt-text:hover {
+        background-color: #A276FF;
+        transition: 1s;
+    }
+
+    /* .picture {
+        min-width: 200px;
+    } */
+
+    .picture img {
+        margin-right: 2%;
+        margin-bottom: 2%;
+        height: 10%;
+    }
+
+    .text-capital {
+        color: var(--FFF, #FFF);
+        font-family: Oswald;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        /* line-height: 185%; */
+    }
+
+    .capital {
+        color: var(--A276FF, #A276FF);
+        font-size: 120px;
+    }
+
+    .text {
+        color: var(--FFF, #FFF);
+        font-family: Roboto;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 155%;
+    }
+
+    /* —————» cтр №2 статья «————— */
+
+    .black {
+        color: #111;
+        flex-grow: 2;
+        /* max-width: 700px; */
+    }
+
+    .article {
+        border-radius: 41px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(15px);
+        display: flex;
+        padding: 4%;
+        margin-top: 10%;
+    }
+
+    .photo {
+        color: #000;
+        text-align: center;
+        flex-grow: 1;
+        float: left;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .photo img {
+        max-width: 300px; /* Максимальная ширина для мобильных устройств */
+        height: auto;
+        }
+        .text-manu{
+        font-size: 14px;
+        margin-top: 25px;
+        }
+        .text {
+        font-size: 20px;
+        }
+        .text-capital {
+        font-size: 50px;
+        }
+        .capital {
+        font-size: 80px;
+        }
+        .content div {
+        margin-bottom: 30px;
+        }
+        .picture img {
+        width: 40%;
+        }
+        .net svg {
+        width: 80%;
+        height: auto;
+        }
+    }
